@@ -1,0 +1,378 @@
+/* universal selectors */
+:root {
+    --background-color: white;
+    --background-divider-color: rgba(215, 215, 215, 0.31);
+    --important-color: rgb(24, 24, 24);
+    --normal-color: #747474;
+    --accent-color: #6a6a6a;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.black-header {
+    color: var(--important-color);
+    text-transform: uppercase;
+}
+
+/* backgrounds */
+#my-work {
+    background-color: var(--background-divider-color);
+    border-top: 1px solid rgba(128, 128, 128, 0.449);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.445);;
+}
+
+.run-buddy {
+    background-image: url("../images/pro2.jpg");
+  }
+  
+  .led-wall {
+    background-image: url("../images/pro4.jpg")
+  }
+  
+  .react-calc {
+    background-image: url("../images/pro3.jpg")
+  }
+  
+  .pastel-puzzles {
+    background-image: url("../images/work3.png")
+  }
+  
+  .surf-report {
+    background-image: url("../images/work3.png")
+  }
+
+/* navbar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2em;
+    padding-left: 8%;
+    padding-right: 8%;
+    
+}
+
+.my-name {
+    color: var(--important-color);
+    font-weight: 700;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+span {
+    color:rgba(81, 81, 81, 0.377)
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;   
+}
+
+nav ul li a:hover {
+    color: #acacac;
+    transition: 0.7s;
+}
+
+
+/* bumper section */
+
+.image-of-me img {
+    border-radius: 50%;
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.5px solid var(--accent-color);
+}
+
+.intro-divider {
+    width: 100%;
+    height: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: var(--background-divider-color);
+    border-top: 1px solid rgba(128, 128, 128, 0.449);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.445);
+}
+
+#UCI {
+    font-size: 20px;
+    padding: 0.5em;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 2em;
+}
+
+#UCI h1 {
+    padding-bottom: 0.5em;
+}
+
+#UCI-link {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+/* main section */
+/* about me section */
+
+.about {
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.about-text {
+    width: 540px;
+    color: var(--normal-color);
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+/* TODO: make a media query changing the flex-direction to column for phone */
+.about-main {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.about-main img {
+    padding-left: 10em;
+}
+
+.about-text h1 {
+    font-size: 85px;
+}
+
+.about-text p {
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 15px;
+    margin-bottom: 45px;
+    text-align: justify;
+}
+
+/* works section */
+
+#works-header {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+}
+
+.flex-container ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.text-background {
+    background-color: black;
+    color: white;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    opacity: 80%;
+}
+
+.text-background span {
+    color: rgb(211, 211, 211);
+}
+#contact{
+  padding: 50px;
+  background-color:#f8f9fa; 
+}
+.contacts{
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.contact form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact input{
+  background: lightgrey;
+  width: 48%;
+  padding: 15px;
+  border: #dee3e4 solid 1px;
+  border-radius: 4px;
+  margin: 20px 0;
+
+}
+.contact textarea{
+  background: lightgrey;
+  width: 100%;
+  padding: 15px;
+  border: #dee3e4 solid 1px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+.b{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact button{
+  color: #fff;
+  padding: 15px 30px;
+  background-color: #20c997;
+  border: #20c997 solid 1px;
+  border-radius:40px ;
+  margin-top: 20px;
+}
+.contact button:hover{
+  background-color: #198754;
+}
+@media screen and (min-width:769px) and (max-width:992px){
+  .contact input{width: 100%;}
+  .contact{width:70%;}
+  .contacts{justify-content: space-around;}
+  .address{width: 30%;}
+}
+@media screen and (min-width:601px) and (max-width:768px){
+  .contact input{width: 100%;}
+  .contact{width:100%;}
+  .contacts{flex-direction: column-reverse; justify-content: center; align-items: center;}
+  
+}
+@media screen and (max-width:600px){
+  .contact input{width: 100%;}
+  .contact{width:100%;}
+  .contacts{flex-direction: column-reverse; justify-content: center; align-items: center;}
+  
+}
+/* TODO: select first work and make it bigger */
+.flex-container ul li:first-child {
+    width: 95%;
+}
+
+.flex-container ul li {
+    width: 570px;
+    height: 300px;
+}
+
+
+.flex-item {
+    border: 0.5px solid rgba(0, 0, 0, 0.516);
+    color: var(--important-color);
+    padding: 5em 0 5em 0;
+    margin: 1em;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    background-size: 100%;
+    /* use bg color, bg blend mode, and transition to apply the desired effect shown in the example */
+    background-color:rgba(0, 0, 0, 0.484);
+    background-blend-mode: soft-light;
+    transition: 1s;
+    flex-wrap: wrap;
+  }
+
+  .flex-item:hover {
+    /* setting this will set the css animation into play */
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+
+  /* contact/footer */
+
+  .contact {
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+
+  address img {
+    width: 70px;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  address {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-header {
+    font-size: 35px;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+
+
+  /* media queries */
+  @media screen and (max-width: 900px) {
+    /* stretches out works into a column */
+    .flex-container ul li,
+    .flex-container ul li:first-child {
+        flex-basis: 100%;
+    }
+    .about-main {
+        padding-bottom: 1.5em;
+    }
+    .about-main img {
+        max-width: 400px;
+        padding-left: 0;
+    }
+  }
+
+
+
+
+
+  @media screen and (max-width: 768px) {
+    /* stretches out works into a column */
+  .flex-container ul li,
+  .flex-container ul li:first-child {
+    flex-basis: 100%;
+  }
+
+  .about-main {
+    flex-direction: column;
+    width: 50%;
+  }
+  .about-main img {
+    max-width: 400px;
+    padding-bottom: 4em;
+    
+  }
+  .about {
+    padding: 0 auto;
+  }
+  .about-text {
+    width: 400px;
+  }
+  .about-text h1 {
+    font-size: 50px;
+  }
+
+  #works-header {
+    font-size: 35px;
+  }
+  }
